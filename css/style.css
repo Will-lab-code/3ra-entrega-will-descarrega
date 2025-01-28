@@ -1,0 +1,243 @@
+/*ORDEN EN CSS*/
+/*RESET
+Familia tipo
+Tamaño tipo
+box-model
+
+REM : 16PX - MEDIDA POR DEFAULT
+2rem : 32PX
+0.5rem : pix
+
+EM - LA MEDIDA LA DOY YO
+10PX
+2EM : 20px
+
+VH: VIEW HEIGHT - ALTO DE PANTALLA
+VW: VIEW WIDTH - ANCHO DE PANTALLA
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/*GRID CONTAINER*/
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr fr 0.25fr;
+    grid-template-areas: 
+        "barra barra barra"
+        "ppal  ppal  ppal"
+        "pie   pie   pie"    
+    ;
+}
+
+/*-----------------------barra-----------------------*/
+.barra{
+    background-color: #314c53;
+    display: flex;
+    justify-content: space-around;
+    height: 75px;
+    align-items: center;
+    grid-area: barra;
+}
+.barra h1{
+    justify-content: flex-start;
+    color: #f7f8fc;
+    text-align: center;
+    text-transform:lowercase;
+    letter-spacing: 0.5cap;
+    font-size: 2rem;
+}
+.barra nav{
+    width: 30%;
+}
+.barra nav ul{
+display: flex;
+justify-content: space-between;
+}
+.barra nav ul li{
+    list-style: none;
+}
+.barra nav ul li a{
+    color: #f7f8fc;
+    text-transform: lowercase;
+    letter-spacing: 0.5cap;
+    text-decoration: none;
+}
+
+/*-----------------------main-----------------------*/
+
+.ppal{
+    grid-area: ppal;
+}
+.padre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.padre h2{
+    color: #314c53;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.padre form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.padre form label{
+    display: flex;
+    text-transform: uppercase;
+    margin: 10px;
+}
+.padre .btn-enviar{
+    margin: 20px;
+}
+.contenedor{
+    background-color: #314c53;
+}
+.hijo{
+    display: flex;
+    flex-flow: wrap;
+    margin: 10px;
+}
+.caja{
+    width: 600px;
+    height: 400px;
+    background-color: #48586f;
+    border: 3px solid antiquewhite;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: antiquewhite;
+    margin: 10px;
+    padding: 10px;
+}
+.caja h3{
+    font-size: 1.5rem;
+}
+.caja img{
+    width: 300px;
+}
+.comentarios{
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+    border: 3px solid white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.comentarios h3{
+    font-size: 1.5rem;
+    color: #f7f8fc;
+}
+.comentarios div{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.comentarios p{
+    margin: 10px;
+    color:#f7f8fc;
+}
+.publi{
+    grid-area: publi;
+}
+.pie{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;    
+}
+.pie-grid{
+    grid-area: pie;
+}
+.pie nav{
+    align-items: center;
+    
+}
+.pie nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 33%;
+}
+.pie nav ul li{
+    justify-content: space-between; 
+}
+
+.pie nav ul li a{
+    color: black;
+    text-transform: lowercase;
+    letter-spacing: 0.5cap;
+    text-decoration: none;
+}
+.pie img {
+    width: 200px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.pie p{
+    margin: 10px;
+}
+
+.form{
+    font-style: italic;
+}
+.btn-enviar{
+    font-size: 1.5rem;
+    background-color: #475841;
+    color: antiquewhite;
+}
+
+/*Box Modeling*/
+/*Display*/
+.block-element {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+.inline-block-element {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 10px;
+}
+
+/* PseudoClases*/
+
+/*¿Por qué no funciona el color del texto*/
+a:link{
+    color:red
+}
+
+a:visited{
+    color:green;
+}
+
+a:hover{
+    background-color: darkred;
+    color: white;
+}
+
+a:active{
+    background-color: yellowgreen;
+}
