@@ -23,57 +23,9 @@ VW: VIEW WIDTH - ANCHO DE PANTALLA
     font-size: 16px;
 }
 
-/*GRID CONTAINER*/
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr fr 0.25fr;
-    grid-template-areas: 
-        "barra barra barra"
-        "ppal  ppal  ppal"
-        "pie   pie   pie"    
-    ;
-}
-
-/*-----------------------barra-----------------------*/
-.barra{
-    background-color: #314c53;
-    display: flex;
-    justify-content: space-around;
-    height: 75px;
-    align-items: center;
-    grid-area: barra;
-}
-.barra h1{
-    justify-content: flex-start;
-    color: #f7f8fc;
-    text-align: center;
-    text-transform:lowercase;
-    letter-spacing: 0.5cap;
-    font-size: 2rem;
-}
-.barra nav{
-    width: 30%;
-}
-.barra nav ul{
-display: flex;
-justify-content: space-between;
-}
-.barra nav ul li{
-    list-style: none;
-}
-.barra nav ul li a{
-    color: #f7f8fc;
-    text-transform: lowercase;
-    letter-spacing: 0.5cap;
-    text-decoration: none;
-}
 
 /*-----------------------main-----------------------*/
 
-.ppal{
-    grid-area: ppal;
-}
 .padre{
     display: flex;
     flex-direction: column;
@@ -101,6 +53,7 @@ justify-content: space-between;
 }
 .contenedor{
     background-color: #314c53;
+    border-radius: 15px;
 }
 .hijo{
     display: flex;
@@ -108,8 +61,20 @@ justify-content: space-between;
     margin: 10px;
 }
 .caja{
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 600px;
+    background-color: #48586f;
+    border: 3px solid antiquewhite;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: antiquewhite;
+    margin: 10px;
+    padding: 10px;
+}
+.caja-nws{
     background-color: #48586f;
     border: 3px solid antiquewhite;
     border-radius: 15px;
@@ -122,7 +87,7 @@ justify-content: space-between;
     padding: 10px;
 }
 .caja h3{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 .caja img{
     width: 300px;
@@ -150,8 +115,9 @@ justify-content: space-between;
     margin: 10px;
     color:#f7f8fc;
 }
-.publi{
-    grid-area: publi;
+.publi-w{
+    text-align: center;
+    display: flex;
 }
 .pie{
     display: flex;
@@ -160,9 +126,7 @@ justify-content: space-between;
     flex-direction: column;
     margin: 10px;    
 }
-.pie-grid{
-    grid-area: pie;
-}
+
 .pie nav{
     align-items: center;
     
@@ -183,7 +147,7 @@ justify-content: space-between;
     letter-spacing: 0.5cap;
     text-decoration: none;
 }
-.pie img {
+.img-gral {
     width: 200px;
     border-radius: 15px;
     margin: 10px;
@@ -201,30 +165,25 @@ justify-content: space-between;
     color: antiquewhite;
 }
 
-/*Box Modeling*/
-/*Display*/
-.block-element {
-    display: block;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-}
-.inline-block-element {
-    display: inline-block;
-    width: 150px;
-    height: 100px;
-    background-color: lightgreen;
-    margin: 10px;
+
+/* Bootstrap - main*/
+.img-gral-w{
+    width: 200px;
+    border-radius: 15px;
+    margin-top: 66px;
+    margin-right: 20;
+    align-items: center;
 }
 
-/* PseudoClases*/
+.center-w{
+    text-align: center;
+}
 
-/*¿Por qué no funciona el color del texto*/
+.col-btn-w{
+    background-color: #48586f;
+    color: antiquewhite;    
+}
+
 a:link{
     color:red
 }
