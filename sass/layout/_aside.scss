@@ -1,0 +1,27 @@
+.comentarios{
+    @include mp (10px, 10px);
+    @include border-w;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    
+    h3{
+        font-size: map-get($txt-size, s);
+        color: $white;
+    }
+
+    div{
+        @include flex-jc-fd-ai;
+        height: 300px;
+    }
+
+    p{
+        @include mp (10px, 10px);
+        color:$white;
+    }
+}
+
+.publi-w{
+    text-align: center;
+    display: flex;
+}

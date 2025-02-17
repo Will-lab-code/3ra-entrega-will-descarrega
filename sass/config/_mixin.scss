@@ -1,0 +1,24 @@
+// con parámetros (puedo definir que cambiar)
+@mixin wh($width, $height){
+    width: $width;
+    height:$height;
+}
+
+@mixin mp($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
+
+// sin parámetros (este va a ser un bloque de código que podré reutilizar
+
+@mixin flex-jc-fd-ai{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin border-w{
+    border: 3px solid $white;
+    border-radius: 15px;
+}

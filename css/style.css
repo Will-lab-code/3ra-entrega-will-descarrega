@@ -49,18 +49,18 @@ VW: VIEW WIDTH - ANCHO DE PANTALLA
     margin: 10px;
 }
 .padre .btn-enviar{
-    margin: 20px;
+    margin: 20px; 
 }
 .contenedor{
     background-color: #314c53;
     border-radius: 15px;
 }
-.hijo{
+.padre__hijo{
     display: flex;
     flex-flow: wrap;
     margin: 10px;
 }
-.caja{
+.padre__hijo__caja{
     width: 400px;
     height: 600px;
     background-color: #48586f;
@@ -74,7 +74,7 @@ VW: VIEW WIDTH - ANCHO DE PANTALLA
     margin: 10px;
     padding: 10px;
 }
-.caja-nws{
+.caja__nws{
     background-color: #48586f;
     border: 3px solid antiquewhite;
     border-radius: 15px;
@@ -89,7 +89,7 @@ VW: VIEW WIDTH - ANCHO DE PANTALLA
 .caja h3{
     font-size: 1.25rem;
 }
-.caja img{
+.img__gral{
     width: 300px;
 }
 .comentarios{
@@ -115,10 +115,16 @@ VW: VIEW WIDTH - ANCHO DE PANTALLA
     margin: 10px;
     color:#f7f8fc;
 }
+
+/*-----------------------publi-----------------------*/
+
 .publi-w{
     text-align: center;
     display: flex;
 }
+
+/*-----------------------pie-----------------------*/
+
 .pie{
     display: flex;
     justify-content: space-around;
@@ -147,7 +153,9 @@ VW: VIEW WIDTH - ANCHO DE PANTALLA
     letter-spacing: 0.5cap;
     text-decoration: none;
 }
-.img-gral {
+
+
+.img__logo {
     width: 200px;
     border-radius: 15px;
     margin: 10px;
@@ -167,7 +175,7 @@ VW: VIEW WIDTH - ANCHO DE PANTALLA
 
 
 /* Bootstrap - main*/
-.img-gral-w{
+.img__gral-w{
     width: 200px;
     border-radius: 15px;
     margin-top: 66px;
@@ -183,6 +191,9 @@ VW: VIEW WIDTH - ANCHO DE PANTALLA
     background-color: #48586f;
     color: antiquewhite;    
 }
+
+
+/*-----------------------botton-----------------------*/
 
 a:link{
     color:red

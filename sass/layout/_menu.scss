@@ -1,0 +1,36 @@
+// bs -nav
+.img-gral-w{
+    @include wh (30em, 45em);
+    border-radius: 15px;
+    margin-top: 66px;
+    margin-right: 20;
+    align-items: center;
+}
+
+.center-w{
+    text-align: center;
+}
+
+.col-btn-w{
+    background-color: $grey;
+    color: map-get($txt-parrafos , color );    
+}
+
+a{
+    &:link{
+    color:$red
+    }
+
+    &:visited{
+        color:$green;
+    }
+
+    &:hover{
+        background-color: $d-red;
+        color: $white;
+    }
+
+    &:active{
+        background-color: $yellow-green;
+    }
+}

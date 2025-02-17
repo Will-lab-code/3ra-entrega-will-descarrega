@@ -1,0 +1,114 @@
+/*-----------------------main-----------------------*/
+
+h1{
+    color: $d-green;
+    font-size: map-get($txt-size, l );
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.padre{
+    @include flex-jc-fd-ai;
+
+    &__h2{
+        color: $white;
+        font-size: map-get($txt-size, m );
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        &__top{
+            font-size: map-get($txt-size, m );
+            color: $d-green;
+            text-align: center;
+        }
+    }
+
+    form{
+        @include mp (10px, 10px);
+        display: flex;
+        flex-direction: column;
+        
+
+        label{
+            @include mp (10px, 10px);
+            display: flex;
+            text-transform: uppercase;            
+        }
+    } 
+
+    &__hijo{
+        @include mp (10px, 10px);
+        display: flex;
+        flex-flow: wrap;
+        
+
+        &__caja{
+            
+            @include flex-jc-fd-ai;
+            @include mp (10px, 10px);
+            @include border-w;
+            background-color: map-get($color-bg ,grey );
+            color: map-get($txt-parrafos , color );
+            text-align: map-get($txt-parrafos , txt-align );
+            
+            
+            h3{
+                font-size: map-get($txt-size, s );
+            }
+        
+            img{
+                width: 300px;
+            }
+        
+        }
+
+    }
+}
+
+.caja{
+    @include wh (30em, 45em);
+    @include flex-jc-fd-ai;
+    @include border-w;
+    @include mp (10px, 10px);
+    background-color: map-get($color-bg , grey );
+    color: map-get($txt-parrafos , color );
+    text-align: map-get($txt-parrafos , txt-align );
+    
+    h3{
+        font-size: map-get($txt-size, s );
+    }
+
+    &__nws{
+        @include flex-jc-fd-ai;
+        @include mp (10px, 10px);
+        @include border-w;
+        color: $white;
+        background-color: $grey;        
+    }
+}
+.contenedor{
+    background-color: $d-green;
+    border-radius: 15px;
+    @include flex-jc-fd-ai;
+}
+.form{
+    font-style: italic;
+}
+
+.center-w{
+    text-align: center;
+}
+
+.col{
+    &-btn-w{
+        background-color: $grey;
+        color: $white;    
+    }
+}
+
+.subs{
+    @include flex-jc-fd-ai;
+    @include mp (10px, 10px);
+}

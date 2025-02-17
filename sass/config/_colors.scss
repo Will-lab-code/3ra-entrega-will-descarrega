@@ -1,0 +1,50 @@
+//colores
+$white: antiquewhite;
+$black: #131316;
+$grey: #48586f;
+$d-green:#314c53;
+$med-green: #475841;
+$yellow-green:yellowgreen;
+$green: green;
+$red: red;
+$d-red: darkred;
+
+//Mapas
+
+$txt-parrafos:(
+    color: $white,
+    txt-align: justify,
+    font-size: 3em,
+    padding: 1.5em,
+);
+// map-get($txt-parrafos, fontsz) = 3em
+
+$size:(
+    xs: 0.5em,
+    sm: 1em,
+    md: 1.5em,
+    lg: 2em,
+);
+
+$color-bg:(
+    white: $white,
+    black: $black,
+    grey: $grey,
+    d-green:$d-green,
+    med-green: $med-green,
+    yellow-green:$yellow-green,
+    green: $green,
+    red: $red,
+    d-red: $d-red,
+);
+
+
+// ☝       ☝
+//key       valor
+//llave     bp
+
+@each $llave, $bp in $size{
+    .comi-#{$llave}{
+        font-size: $bp;
+    }
+}

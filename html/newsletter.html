@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--CSS-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Newsletter - Will Descarrega</title>
 </head>
 <body>
@@ -29,17 +31,17 @@
                   <a class="nav-link" href="./contacto.html">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./newsletter.html">Newsletter</a>
+                  <a class="nav-link active" aria-current="page" href="./newsletter.html">Newsletter</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     ¡Pasa a la acción!
                     </a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Contame de vos</a></li>
+                    <li><a class="dropdown-item" href="./contacto.html">Contame de vos</a></li>
                     <li><a class="dropdown-item" href="#">Unite</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="./html/contacto.html">¿Alguna consulta?</a></li>
+                    <li><a class="dropdown-item" href="./contacto.html">¿Alguna consulta?</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -52,34 +54,44 @@
                 </form>
             </div>
         </div>
+      </nav>
     </article>    
     </header>
       <section class="row">
         <main class="col-lg-8 col-md-12 col-sm-12">
           <section class="row justify-content-md-center">
             <div class="col-lg-6 col-md-12 col-sm-12">
-              <h2>•Newsletter•</h2>
-              <h3>Toda aventura comienza por el primer paso</h3>
+              <div class="padre">
+                <h1>• Newsletter •</h1><br>
+                <h2 class="padre__h2__top">Toda aventura comienza por el primer paso</h2>
+            </div>
             </div>
             <article class="row justify-content-md-center">
-              <div class="row contenedor caja">
-                <h3>Gestión del cambio y diseño del futuro</h3>
-                <img class="img-gral" src="../assets/img-conferencia.png" alt="img-conferencia">
-                <p>Cada semana, te comparto ideas prácticas, herramientas y estrategias para ayudarte a estructurar y hacer crecer tu negocio. 
-                  Desde consejos sobre productividad y gestión hasta estrategias de ventas y análisis de datos, aquí encontrarás contenido útil 
-                  y accionable para avanzar sin trabas.</p>
-                <p>
-                  🔹 Información clara y directa <br>
-                  🔹 Ejemplos reales y aplicables <br>
-                  🔹 Recursos que potencian tu emprendimiento
-                </p>
-                <p>
-                  Suscríbete y recibe cada semana un impulso para llevar tu negocio al siguiente nivel.
-                  ¡Tu crecimiento empieza con una acción! 💡
-                </p>
+              <div class="row contenedor padre__hijo__caja">
+                <article class="row padre">
+                  <div class="col contenedor"></div>
+                  <div class="padre__hijo col-5 col-md-8 col-sm-8">
+                  <div class="padre__hijo__caja">
+                      <h2 class="padre__h2">Gestión del cambio y diseño del futuro</h2>
+                      <img class="img__gral" src="../assets/img-conferencia.png" alt="img-conferencia">
+                      <p>Cada semana, te comparto ideas prácticas, herramientas y estrategias para ayudarte a estructurar y hacer crecer tu negocio. 
+                        Desde consejos sobre productividad y gestión hasta estrategias de ventas y análisis de datos, aquí encontrarás contenido útil 
+                        y accionable para avanzar sin trabas.</p>
+                      <p>
+                        🔹 Información clara y directa <br>
+                        🔹 Ejemplos reales y aplicables <br>
+                        🔹 Recursos que potencian tu emprendimiento
+                      </p>
+                      <p>
+                        Suscríbete y recibe cada semana un impulso para llevar tu negocio al siguiente nivel.
+                        ¡Tu crecimiento empieza con una acción! 💡
+                      </p>
+                  </div>
+                  <div class="col"></div>
+                </article>
               </div>
               <article class="row"> 
-                <div class="col caja-nws">
+                <div class="col caja__nws">
                   <h3>Comenzá a crear tu FUTURO en tu PRESENTE</h3>
                   <div>
                     <ol class="list-group list-group-numbered">
@@ -113,12 +125,14 @@
         </main>
         <aside class="col-lg-4 col-md-12 col-sm-12">
           <div class="col-lg-2 col-md-12 col-sm-12">
-            <h3 >•Subscribirse•</h3>
-            <form action="/submit" method="get">
-              <label for="mail">Mail:</label>
-              <input type="text" name="mail" id="mail">
-              <button type="button" class="btn btn-light col-btn-w">Enviar</button>
-            </form>
+            <div class="subs" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+              <h3>•Subscribirse•</h3>
+              <form action="/submit" method="get">
+                <label for="mail">Mail:</label>
+                <input type="text" name="mail" id="mail">
+                <button type="button" class="btn btn-light col-btn-w">Enviar</button>
+              </form>
+            </div>
           </div>
         </aside>
       </section>
@@ -138,10 +152,9 @@
           </div>
           <div class="p-12 row justify-content-md-center">
               <div class="col-lg-3 col-md-12 col-sm-12 p-12">
-                  <!-- redes, menu de navegación, mapa, contactos, etc. -->
                   <nav class="navbar navbar-expand-lg bg-body-tertiary">
                       <div class="container-fluid">
-                        <a class="navbar-brand" href="./index.html">•WD•</a>
+                        <a class="navbar-brand" href="../index.html">•WD•</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                           <span class="navbar-toggler-icon"></span>
                         </button>
@@ -158,13 +171,17 @@
           </div>                            
           <div class="text-center">
           <p>Contacto: <a href="mailto.wadescarrega@gmail.com" target="_blank">wadescarrega@gmail.com</a></p>
-          <img class="img-gral" src="../assets/logo.png" alt="logo">
+          <img class="img__logo" data-aos=zoom-out src="../assets/logo.png" alt="logo">
           </div>
       </article>
       </footer>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>

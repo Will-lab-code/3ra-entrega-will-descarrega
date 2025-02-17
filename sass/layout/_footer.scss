@@ -1,0 +1,32 @@
+/*-----------------------footer-----------------------*/
+
+.pie{
+    @include flex-jc-fd-ai;
+    @include mp (10px, 10px);
+
+    nav{
+        align-items: center;
+        
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            gap: 33%;
+
+            li{
+                justify-content: space-between; 
+
+                a{
+                    color: $black;
+                    text-transform: lowercase;
+                    letter-spacing: 0.5px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    p{
+        @include mp (10px, 10px);
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "proyecto-will-descarrega",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "sass --watch sass/style.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Will-lab-code/2da-entrega-will-descarrega.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Will-lab-code/2da-entrega-will-descarrega/issues"
+  },
+  "homepage": "https://github.com/Will-lab-code/2da-entrega-will-descarrega#readme",
+  "description": ""
+}

@@ -1,0 +1,21 @@
+.img{
+    &__logo{
+        @include border-w;
+        width: 200px;
+        margin: 10px; 
+    }
+
+    &__gral{
+        @include border-w;
+        width: 300px;
+        
+        &-w{
+            @include border-w;
+            width: 200px;
+            margin-top: 66px;
+            margin-right: 20;
+            align-items: center;
+        }
+    }
+    
+}
