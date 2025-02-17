@@ -54,6 +54,7 @@ VW: VIEW WIDTH - ANCHO DE PANTALLA
 .contenedor{
     background-color: #314c53;
     border-radius: 15px;
+    border-radius: 15px;
 }
 .padre__hijo{
     display: flex;
@@ -87,6 +88,7 @@ VW: VIEW WIDTH - ANCHO DE PANTALLA
     padding: 10px;
 }
 .caja h3{
+    font-size: 1.25rem;
     font-size: 1.25rem;
 }
 .img__gral{
@@ -132,6 +134,7 @@ VW: VIEW WIDTH - ANCHO DE PANTALLA
     flex-direction: column;
     margin: 10px;    
 }
+
 
 .pie nav{
     align-items: center;
