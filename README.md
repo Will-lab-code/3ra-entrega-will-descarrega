@@ -2,8 +2,8 @@
 
 ## 🌍 William Descarrega - Sitio Web Personal  
 
-[![Website](https://will-lab-code.github.io/3ra-entrega-will-descarrega/index.html)]  
-()
+[![Website]()]  
+(https://will-lab-code.github.io/3ra-entrega-will-descarrega/index.html)
 
 ## 🎯 **Descripción del Proyecto**  
 

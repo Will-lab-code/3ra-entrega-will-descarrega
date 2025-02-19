@@ -54,17 +54,19 @@ tamaños de tipografías
 }
 
 a:link {
-  color: red;
+  color: #314c53;
 }
 a:visited {
-  color: green;
+  color: darkred;
+  text-decoration: underline;
 }
 a:hover {
   background-color: darkred;
   color: antiquewhite;
 }
 a:active {
-  background-color: yellowgreen;
+  background-color: #314c53;
+  color: antiquewhite;
 }
 
 /*-----------------------main-----------------------*/
@@ -277,6 +279,7 @@ h1 {
   padding: 10px;
 }
 
+/*-----------------------mq-----------------------*/
 @media (min-width: 768px) {
   .publi-w {
     width: 30em;
