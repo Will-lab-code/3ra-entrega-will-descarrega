@@ -6,13 +6,13 @@
     flex-direction: column;
     
     h3{
-        font-size: map-get($txt-size, s);
+        font-size: map-get($txt-size, m);
         color: $white;
     }
 
     div{
         @include flex-jc-fd-ai;
-        height: 300px;
+        height: 30em;
     }
 
     p{
