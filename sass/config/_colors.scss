@@ -44,7 +44,8 @@ $color-bg:(
 //llave     bp
 
 @each $llave, $bp in $size{
-    .comi-#{$llave}{
+    .comi-#{$llave}
+    {
         font-size: $bp;
     }
 }
