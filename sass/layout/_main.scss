@@ -1,4 +1,4 @@
-/*-----------------------main-----------------------*/
+/*-----------------------MAIN-----------------------*/
 
 h1{
     color: $d-green;
@@ -31,7 +31,7 @@ h1{
         flex-direction: column;
         
         label{
-            @include mp (10px, 10px);
+            
             display: flex;
             text-transform: uppercase;            
         }
@@ -58,7 +58,7 @@ h1{
             }
         
             img{
-                width: 300px;
+                width: 20em;
             }
         
         }
@@ -84,9 +84,26 @@ h1{
         @include mp (10px, 10px);
         @include border-w;
         color: $white;
-        background-color: $grey;        
+        background-color: $grey;
+
+        &__h3{
+            font-size: map-get($txt-size, m);
+            @include mp (5px, 5px);
+            text-decoration: underline;
+            color: $d-red;
+        }
+        
+        
     }
 }
+
+h3{
+    font-size: map-get($txt-size, m);
+    @include mp (5px, 5px);
+    text-decoration: underline;
+    color: $d-red;
+}
+
 .contenedor{
     background-color: $d-green;
     border-radius: 15px;
@@ -98,13 +115,6 @@ h1{
 
 .center-w{
     text-align: center;
-}
-
-.col{
-    &-btn-w{
-        background-color: $grey;
-        color: $white;    
-    }
 }
 
 .subs{

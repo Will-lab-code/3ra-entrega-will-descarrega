@@ -1,13 +1,14 @@
+/*-----------------------ASIDE-----------------------*/
 .comentarios{
     @include mp (10px, 10px);
     @include border-w;
-    height: 300px;
+    height: 3em;
     display: flex;
     flex-direction: column;
     
-    h3{
-        font-size: map-get($txt-size, m);
-        color: $white;
+    &__h3{
+        font-size: map-get($txt-size, xs);
+        color: $d-green;
     }
 
     div{
@@ -24,4 +25,11 @@
 .publi-w{
     text-align: center;
     display: flex;
+}
+
+.col{
+    &-btn-w{
+        background-color: $grey;
+        color: $white;    
+    }
 }

@@ -1,11 +1,5 @@
-// bs -nav
-.img-gral-w{
-    @include wh (30em, 45em);
-    border-radius: 15px;
-    margin-top: 66px;
-    margin-right: 20;
-    align-items: center;
-}
+/*-----------------------MENU-----------------------*/
+
 
 .center-w{
     text-align: center;
@@ -13,7 +7,15 @@
 
 .col-btn-w{
     background-color: $grey;
-    color: map-get($txt-parrafos , color );    
+    color: map-get($txt-parrafos , color );
+    @include border-w;    
+}
+
+.w-col-btn-cont{
+    background-color: $grey;
+    color: map-get($txt-parrafos , color );
+    @include border-w;
+    @include flex-jc-fd-ai;    
 }
 
 a{
@@ -32,7 +34,7 @@ a{
     }
 
     &:active{
-        background-color: $d-green;
+        background-color: $green;
         color: $white;
     }
 }
