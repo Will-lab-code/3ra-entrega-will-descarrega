@@ -31,7 +31,6 @@ h1{
         flex-direction: column;
         
         label{
-            
             display: flex;
             text-transform: uppercase;            
         }
@@ -51,7 +50,6 @@ h1{
             background-color: map-get($color-bg ,grey );
             color: map-get($txt-parrafos , color );
             text-align: map-get($txt-parrafos , txt-align );
-            
             
             h3{
                 font-size: map-get($txt-size, s );
