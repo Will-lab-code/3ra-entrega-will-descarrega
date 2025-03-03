@@ -37,7 +37,7 @@ h1{
     } 
 
     &__hijo{
-        @include mp (10px, 10px);
+        @include mp (1em, 1em);
         display: flex;
         flex-flow: wrap;
         
@@ -45,7 +45,7 @@ h1{
         &__caja{
             
             @include flex-jc-fd-ai;
-            @include mp (10px, 10px);
+            
             @include border-w;
             background-color: map-get($color-bg ,grey );
             color: map-get($txt-parrafos , color );
@@ -53,10 +53,6 @@ h1{
             
             h3{
                 font-size: map-get($txt-size, s );
-            }
-        
-            img{
-                width: 20em;
             }
         
         }
